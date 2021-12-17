@@ -11,16 +11,24 @@ function App() {
       <BrowserRouter>
         <header className="App-header">
           Head Dur
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/teams">Teams</NavLink>
-          <NavLink to="/players">Players</NavLink>
+          <NavLink className="App-link" to="/">
+            Home
+          </NavLink>
+          <NavLink className="App-link" to="/teams">
+            Teams
+          </NavLink>
+          <NavLink className="App-link" to="/players">
+            Players
+          </NavLink>
         </header>
         <Switch>
           <Route path="/players/:id" component={Player} />
           <Route path="/players" component={PlayerList} />
           <Route path="/teams/:id" component={Team} />
           <Route path="/teams" component={Teams} />
-          <Route path="/" />
+          <Route path="/">
+            <h1>Home</h1>
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>
