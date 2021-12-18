@@ -1,6 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import TeamDetail from '../teamdetail/TeamDetail.js';
 import './TeamList.css';
 
-export default function TeamList() {
-  return <div></div>;
+export default function TeamList({ teams }) {
+  return (
+    <div className="">
+      {teams.map((team) => (
+        <li key={team.id}>
+          <Link to={`/teams/${team.id}`}>
+            <TeamDetail team={team} />
+          </Link>
+        </li>
+      ))}
+    </div>
+  );
 }

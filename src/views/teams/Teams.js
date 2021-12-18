@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react';
 import './Teams.css';
 import TeamList from '../../components/teamlist/TeamList.js';
-import getTeams from '../../services/teams';
+import { getTeams } from '../../services/teams.js';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
@@ -17,7 +17,7 @@ export default function Teams() {
   return (
     <div>
       <h1>Teams</h1>
-      <TeamList {...teams}></TeamList>
+      <TeamList teams={teams}></TeamList>
     </div>
   );
 }
