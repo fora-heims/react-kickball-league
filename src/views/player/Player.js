@@ -23,7 +23,7 @@ export default function Player(props) {
 
   return (
     <div>
-      <PlayerDetail player={player[0]}></PlayerDetail>
+      <PlayerDetail player={player[0]} playerDetail></PlayerDetail>
     </div>
   );
 }
