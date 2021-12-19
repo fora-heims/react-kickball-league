@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header className="App-header">
-          Head Dur
+          Kickball League
           <NavLink className="App-link" to="/">
             Home
           </NavLink>
