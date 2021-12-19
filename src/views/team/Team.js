@@ -4,7 +4,7 @@ import TeamDetail from '../../components/teamdetail/TeamDetail.js';
 import { getTeam } from '../../services/teams';
 
 export default function Team(props) {
-  const [team, setTeam] = useState(null);
+  const [team, setTeam] = useState([]);
   const [loading, setLoading] = useState(true);
   const id = props.match.params.id;
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Team(props) {
   }
   return (
     <div>
-      <TeamDetail team={team[0]}></TeamDetail>
+      <TeamDetail team={team[0]} showDetail></TeamDetail>
     </div>
   );
 }

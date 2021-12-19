@@ -6,13 +6,15 @@ import './TeamList.css';
 export default function TeamList({ teams }) {
   return (
     <div className="">
-      {teams.map((team) => (
-        <li key={team.id}>
-          <Link to={`/teams/${team.id}`}>
-            <TeamDetail team={team} />
-          </Link>
-        </li>
-      ))}
+      <ul>
+        {teams.map((team) => (
+          <li key={team.id}>
+            <Link to={`/teams/${team.id}`}>
+              <TeamDetail team={team} />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
