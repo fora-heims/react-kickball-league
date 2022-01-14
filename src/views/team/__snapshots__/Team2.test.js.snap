@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a teams details 1`] = `
+<div>
+  <div>
+    <div>
+      <h3>
+        Stumptown Lumberjacks
+      </h3>
+      <h4>
+        Location: 
+        Portland
+        , 
+        OR
+      </h4>
+      <h4>
+        Players:
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="/players/5"
+          >
+            Gary Coolman
+          </a>
+          <h5>
+            Position: 
+            Pitcher
+          </h5>
+        </li>
+        <li>
+          <a
+            href="/players/6"
+          >
+            Terry Cruise
+          </a>
+          <h5>
+            Position: 
+            Catcher
+          </h5>
+        </li>
+        <li>
+          <a
+            href="/players/7"
+          >
+            Bud E. Guy
+          </a>
+          <h5>
+            Position: 
+            Outfield
+          </h5>
+        </li>
+        <li>
+          <a
+            href="/players/8"
+          >
+            Buster Rimes
+          </a>
+          <h5>
+            Position: 
+            Shortstop
+          </h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
